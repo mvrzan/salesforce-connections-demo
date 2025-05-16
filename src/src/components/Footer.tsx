@@ -7,14 +7,11 @@ import { MdPhoneIphone } from "react-icons/md";
 const Footer = (): ReactElement => {
   return (
     <footer className="text-white text-sm">
-      {/* Main footer content */}
       <div className="bg-black w-full px-4 pt-12 pb-4">
         <div className="flex flex-col items-center mb-8">
-          {/* Centered Quadstar logo */}
           <img src={quadstarLogo} alt="Quadstar Logo" className="h-12 mb-4" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 max-w-[1200px] mx-auto">
-          {/* Subscribe */}
           <div>
             <div className="font-bold mb-2 text-[#278D90]">SUBSCRIBE</div>
             <div className="mb-2 text-xs">
@@ -40,7 +37,6 @@ const Footer = (): ReactElement => {
               </a>
             </div>
           </div>
-          {/* Shop by Category */}
           <div className="border-l-1 pl-4">
             <div className="font-bold mb-2 text-[#278D90]">SHOP BY CATEGORY</div>
             <ul className="space-y-1 text-xs">
@@ -71,7 +67,6 @@ const Footer = (): ReactElement => {
               </li>
             </ul>
           </div>
-          {/* Resources */}
           <div>
             <div className="font-bold mb-2 text-[#278D90]">RESOURCES</div>
             <ul className="space-y-1 text-xs">
@@ -97,7 +92,6 @@ const Footer = (): ReactElement => {
               </li>
             </ul>
           </div>
-          {/* Customer Service */}
           <div>
             <div className="font-bold mb-2 text-[#278D90]">CUSTOMER SERVICE</div>
             <ul className="space-y-1 text-xs">
@@ -123,7 +117,6 @@ const Footer = (): ReactElement => {
               </li>
             </ul>
           </div>
-          {/* About */}
           <div>
             <div className="font-bold mb-2 text-[#278D90]">ABOUT</div>
             <ul className="space-y-1 text-xs">
@@ -146,7 +139,6 @@ const Footer = (): ReactElement => {
           </div>
         </div>
       </div>
-      {/* Bottom legal bar */}
       <div className="bg-[#231f20] py-2">
         <div className="flex items-center justify-between max-w-[1200px] mx-auto px-4">
           <div className="flex items-center">
