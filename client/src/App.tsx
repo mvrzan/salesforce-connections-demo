@@ -7,9 +7,8 @@ function App() {
   const configureScriptUrl = useDataCloudScript();
   const dataCloudWebSdkUrl = import.meta.env.VITE_DATA_CLOUD_WEB_SDK_URL;
 
-  console.log("dataCloudWebSdkUrl", dataCloudWebSdkUrl);
-
   configureScriptUrl(dataCloudWebSdkUrl);
+
   return (
     <>
       <Header />
