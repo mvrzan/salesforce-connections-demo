@@ -17,7 +17,7 @@ const useDataCloudScript = () => {
         await window.SalesforceInteractions.init({
           consents: [
             {
-              provider: "Einstein Personalization Demo",
+              provider: "Salesforce Connections Personalization Demo",
               purpose: window.SalesforceInteractions.ConsentPurpose.Tracking,
               status: window.SalesforceInteractions.ConsentStatus.OptIn,
             },
