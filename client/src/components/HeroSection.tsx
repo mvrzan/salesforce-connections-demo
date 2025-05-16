@@ -80,7 +80,7 @@ const HeroSection = () => {
                 <img
                   src={service.icon}
                   alt={service.label}
-                  className="w-20 h-20 mb-4 group-hover:scale-110 transition-transform mx-auto"
+                  className="w-28 h-28 mb-4 group-hover:scale-110 transition-transform mx-auto"
                 />
                 <span className="text-lg font-medium text-gray-800 group-hover:text-[#278d90] text-center block w-full">
                   {service.label}
