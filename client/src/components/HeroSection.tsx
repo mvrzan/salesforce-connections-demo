@@ -40,18 +40,12 @@ const HeroSection = () => {
       <img src={topLevelHero} alt="Hero Banner" className="w-full h-auto object-cover block m-0 p-0" />
 
       {/* Text overlay */}
-      <div
-        className="absolute left-1/3 top-[25%] transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-start w-full max-w-2xl px-4 z-10"
-        style={{ pointerEvents: "none" }}
-      >
+      <div className="absolute left-1/3 top-[25%] transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-start w-full max-w-2xl px-4 z-10 pointer-events-none">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-left drop-shadow-lg">Connect your world.</h1>
         <p className="text-xl md:text-2xl text-white mb-6 text-left drop-shadow-lg">
           Browse our devices, internet plans, and connected home services.
         </p>
-        <button
-          className="text-white py-3 px-6 rounded-3xl font-medium transition-colors mt-2"
-          style={{ backgroundColor: "#278d90", pointerEvents: "auto" }}
-        >
+        <button className="text-white py-3 px-6 rounded-3xl font-medium transition-colors mt-2 bg-[#278d90] pointer-events-auto">
           Let's Connect
         </button>
       </div>
@@ -59,15 +53,11 @@ const HeroSection = () => {
       <img
         src={heroBannerBottom}
         alt="Hero Banner Bottom Overlay"
-        className="w-full h-auto object-cover block m-0 p-0 -mt-96"
-        style={{ position: "relative", zIndex: 1 }}
+        className="w-full h-auto object-cover block m-0 p-0 -mt-96 relative z-[1]"
       />
 
       {/* Let's find what you need overlay */}
-      <div
-        className="absolute left-1/2 top-[65%] w-full flex flex-col items-center z-20"
-        style={{ transform: "translateX(-50%) translateY(-100%)", pointerEvents: "auto" }}
-      >
+      <div className="absolute left-1/2 top-[65%] w-full flex flex-col items-center z-20 transform -translate-x-1/2 -translate-y-full pointer-events-auto">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center drop-shadow-lg">Let's find what you need</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full justify-items-center">
