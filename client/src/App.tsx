@@ -15,8 +15,10 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <HomeTv />
-      <Discount />
+      <div className="w-full bg-no-repeat bg-center bg-[size:100%_auto] bg-[url('./assets/background/LineArt_lines_internet_bgTrim2.png')]">
+        <HomeTv />
+        <Discount />
+      </div>
       <Footer />
     </>
   );
