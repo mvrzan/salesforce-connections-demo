@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
+import HomeTv from "./components/HomeTv";
 import Discount from "./components/Discount";
 import useDataCloudScript from "./hooks/useLoadDataCloudScript";
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <HomeTv />
       <Discount />
       <Footer />
     </>
