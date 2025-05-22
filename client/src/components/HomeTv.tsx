@@ -17,7 +17,7 @@ const HomeTv = () => {
           Grab some popcorn and your favorite blankets. Our streaming packages will make your couch the real star of the
           show.
         </p>
-        <button className="bg-[#278D90] hover:bg-[#31B2B6] text-white font-bold py-2 px-4 rounded-4xl w-fit px-9">
+        <button className="bg-[#278D90] hover:bg-[#31B2B6] text-white font-bold py-2 px-9 rounded-4xl w-fit">
           STREAM BIG
         </button>
       </div>
