@@ -5,6 +5,7 @@ import mobilePlansIcon from "../assets/images/Icon_Circle_mobilePlans_x2.png";
 import homeEntertainmentIcon from "../assets/images/Icon_Circle_homeEntertainment_x2.png";
 import phoneIcon from "../assets/images/Icon_Circle_phone_x2.png";
 import supportIcon from "../assets/images/Icon_Circle_support_x2.png";
+import Recommendations from "./Recommendations";
 
 const services = [
   {
@@ -55,7 +56,7 @@ const HeroSection = () => {
         className="w-full h-auto object-cover block m-0 p-0 -mt-96 relative z-[1]"
       />
 
-      <div className="absolute left-1/2 top-[65%] w-full flex flex-col items-center z-20 transform -translate-x-1/2 -translate-y-full pointer-events-auto">
+      <div className="absolute left-1/2 top-[62%] w-full flex flex-col items-center z-20 transform -translate-x-1/2 -translate-y-full pointer-events-auto">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center drop-shadow-lg">Let's find what you need</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full justify-items-center">
@@ -77,6 +78,9 @@ const HeroSection = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="absolute left-1/2 top-[100%] w-full flex flex-col items-center z-20 transform -translate-x-1/2 -translate-y-full pointer-events-auto">
+        <Recommendations recommendationType="internet" />
       </div>
     </div>
   );
