@@ -2,7 +2,7 @@ import SuperFastInternet from "./SuperFastInternet";
 
 const Discount = () => {
   return (
-    <div className="w-full relative overflow-hidden min-h-[60vh] bg-no-repeat bg-center bg-size-[100%] bg-[url('../src/assets/background/LineArt_lines_internet_bgTrim2.png')]">
+    <div className="w-full relative overflow-hidden min-h-[60vh]">
       <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-white to-[#93B7C5] opacity-70" />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[60vh] py-16">
         <div className="w-full flex justify-center z-20 mb-8">
