@@ -44,11 +44,15 @@ const SuperFastInternet = () => {
           DIAL IN TODAY
         </button>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto px-4">
-        {features.map((feature) => (
+      <div className="flex flex-col md:flex-row justify-center gap-12 max-w-5xl mx-auto px-4">
+        {features.map((feature, idx) => (
           <div
             key={feature.title}
-            className="bg-white rounded-xl shadow-md p-8 flex-1 max-w-xs mx-auto md:mx-0 flex flex-col items-center"
+            className={
+              `bg-white rounded-xl shadow-md p-8 flex-1 max-w-xs mx-auto md:mx-0 flex flex-col items-center ` +
+              (idx === 0 ? "md:relative md:-top-8 " : "") +
+              (idx === features.length - 1 ? "md:relative md:top-8 " : "")
+            }
           >
             <Checkmark />
             <div className="font-bold text-lg mb-2 text-gray-800">{feature.title}</div>
