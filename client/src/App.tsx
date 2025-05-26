@@ -1,16 +1,31 @@
+import { useEffect } from "react";
+import useDataCloudScript from "./hooks/useLoadDataCloudScript";
+import useLoadEmbeddedChat from "./hooks/useLoadEmbeddedChat";
+
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import PlansOfFuture from "./components/PlansOfFuture";
 import HomeTv from "./components/HomeTv";
 import Discount from "./components/Discount";
-import useDataCloudScript from "./hooks/useLoadDataCloudScript";
 
 function App() {
   const configureScriptUrl = useDataCloudScript();
+  const configureAgentforceScriptUrl = useLoadEmbeddedChat();
+
   const dataCloudWebSdkUrl = import.meta.env.VITE_DATA_CLOUD_WEB_SDK_URL;
+  const orgId = import.meta.env.VITE_CHAT_ORG_ID;
+  const scriptUrl = import.meta.env.VITE_CHAT_SCRIPT_URL;
+  const instanceUrl = import.meta.env.VITE_CHAT_INSTANCE_URL;
+  const embeddingUrl = import.meta.env.VITE_CHAT_EMBEDDING_URL;
+  const embeddingApiName = import.meta.env.VITE_CHAT_EMBEDDING_API_NAME;
 
   configureScriptUrl(dataCloudWebSdkUrl);
+
+  useEffect(() => {
+    console.log("Adding Agentforce chat!", orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName);
+    configureAgentforceScriptUrl(orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName);
+  }, [configureAgentforceScriptUrl, orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName]);
 
   return (
     <>
