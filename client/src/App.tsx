@@ -23,7 +23,6 @@ function App() {
   configureScriptUrl(dataCloudWebSdkUrl);
 
   useEffect(() => {
-    console.log("Adding Agentforce chat!", orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName);
     configureAgentforceScriptUrl(orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName);
   }, [configureAgentforceScriptUrl, orgId, scriptUrl, instanceUrl, embeddingUrl, embeddingApiName]);
 
