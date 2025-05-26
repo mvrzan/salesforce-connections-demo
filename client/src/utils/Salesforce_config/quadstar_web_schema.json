@@ -1,0 +1,597 @@
+{
+  "records": [
+    {
+      "developerName": "catalog",
+      "masterLabel": "Catalog",
+      "category": "Engagement",
+      "availabilityStatus": "INUSE",
+      "externalDataTranFields": [
+        {
+          "masterLabel": "attributeProductDescription",
+          "dataType": "Text",
+          "developerName": "attributeProductDescription",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "type",
+          "dataType": "Text",
+          "developerName": "type",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "category",
+          "dataType": "Text",
+          "developerName": "category",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "dateTime",
+          "dataType": "DateTime",
+          "developerName": "dateTime",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "deviceId",
+          "dataType": "Text",
+          "developerName": "deviceId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventId",
+          "dataType": "Text",
+          "developerName": "eventId",
+          "isDataRequired": true,
+          "primaryIndexOrder": 1,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventType",
+          "dataType": "Text",
+          "developerName": "eventType",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "id",
+          "dataType": "Text",
+          "developerName": "id",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "interactionName",
+          "dataType": "Text",
+          "developerName": "interactionName",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "pageView",
+          "dataType": "Number",
+          "developerName": "pageView",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "personalizationContentId",
+          "dataType": "Text",
+          "developerName": "personalizationContentId",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "personalizationId",
+          "dataType": "Text",
+          "developerName": "personalizationId",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sessionId",
+          "dataType": "Text",
+          "developerName": "sessionId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceChannel",
+          "dataType": "Text",
+          "developerName": "sourceChannel",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceLocale",
+          "dataType": "Text",
+          "developerName": "sourceLocale",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourcePageType",
+          "dataType": "Text",
+          "developerName": "sourcePageType",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceUrl",
+          "dataType": "Text",
+          "developerName": "sourceUrl",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceUrlReferrer",
+          "dataType": "Text",
+          "developerName": "sourceUrlReferrer",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "attributeProductName",
+          "dataType": "Text",
+          "developerName": "attributeProductName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        }
+      ],
+      "fieldCount": 19,
+      "availabilityStatusLabel": {
+        "label": "In Use",
+        "rawValue": "INUSE"
+      },
+      "streamingAppLabel": "EP_AI1"
+    },
+    {
+      "developerName": "chatActivities",
+      "masterLabel": "Chat Activities",
+      "category": "Engagement",
+      "availabilityStatus": "INUSE",
+      "externalDataTranFields": [
+        {
+          "masterLabel": "category",
+          "dataType": "Text",
+          "developerName": "category",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "chatMessage",
+          "dataType": "Text",
+          "developerName": "chatMessage",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "dateTime",
+          "dataType": "DateTime",
+          "developerName": "dateTime",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sessionId",
+          "dataType": "Text",
+          "developerName": "sessionId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventId",
+          "dataType": "Text",
+          "developerName": "eventId",
+          "isDataRequired": true,
+          "primaryIndexOrder": 1,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventType",
+          "dataType": "Text",
+          "developerName": "eventType",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "deviceId",
+          "dataType": "Text",
+          "developerName": "deviceId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        }
+      ],
+      "fieldCount": 7,
+      "availabilityStatusLabel": {
+        "label": "In Use",
+        "rawValue": "INUSE"
+      },
+      "streamingAppLabel": "EP_AI1"
+    },
+    {
+      "developerName": "identity",
+      "masterLabel": "Identity",
+      "category": "Profile",
+      "availabilityStatus": "INUSE",
+      "externalDataTranFields": [
+        {
+          "masterLabel": "addressLine1",
+          "dataType": "Text",
+          "developerName": "addressLine1",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "stateProvince",
+          "dataType": "Text",
+          "developerName": "stateProvince",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "addressLine3",
+          "dataType": "Text",
+          "developerName": "addressLine3",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "addressLine4",
+          "dataType": "Text",
+          "developerName": "addressLine4",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "category",
+          "dataType": "Text",
+          "developerName": "category",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "city",
+          "dataType": "Text",
+          "developerName": "city",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "country",
+          "dataType": "Text",
+          "developerName": "country",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "dateTime",
+          "dataType": "DateTime",
+          "developerName": "dateTime",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "deviceId",
+          "dataType": "Text",
+          "developerName": "deviceId",
+          "isDataRequired": true,
+          "primaryIndexOrder": 1,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "email",
+          "dataType": "Text",
+          "developerName": "email",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventId",
+          "dataType": "Text",
+          "developerName": "eventId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventType",
+          "dataType": "Text",
+          "developerName": "eventType",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "firstName",
+          "dataType": "Text",
+          "developerName": "firstName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "isAnonymous",
+          "dataType": "Text",
+          "developerName": "isAnonymous",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "lastName",
+          "dataType": "Text",
+          "developerName": "lastName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "lastProductEngaged",
+          "dataType": "Text",
+          "developerName": "lastProductEngaged",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "pageView",
+          "dataType": "Number",
+          "developerName": "pageView",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "phoneNumber",
+          "dataType": "Text",
+          "developerName": "phoneNumber",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "postalCode",
+          "dataType": "Text",
+          "developerName": "postalCode",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sessionId",
+          "dataType": "Text",
+          "developerName": "sessionId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceChannel",
+          "dataType": "Text",
+          "developerName": "sourceChannel",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceLocale",
+          "dataType": "Text",
+          "developerName": "sourceLocale",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourcePageType",
+          "dataType": "Text",
+          "developerName": "sourcePageType",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceUrl",
+          "dataType": "Text",
+          "developerName": "sourceUrl",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sourceUrlReferrer",
+          "dataType": "Text",
+          "developerName": "sourceUrlReferrer",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "addressLine2",
+          "dataType": "Text",
+          "developerName": "addressLine2",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        }
+      ],
+      "fieldCount": 26,
+      "availabilityStatusLabel": {
+        "label": "In Use",
+        "rawValue": "INUSE"
+      },
+      "streamingAppLabel": "EP_AI1"
+    },
+    {
+      "developerName": "userLoggedOut",
+      "masterLabel": "User Logged Out",
+      "category": "Engagement",
+      "availabilityStatus": "INUSE",
+      "externalDataTranFields": [
+        {
+          "masterLabel": "category",
+          "dataType": "Text",
+          "developerName": "category",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "dateTime",
+          "dataType": "DateTime",
+          "developerName": "dateTime",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "deviceId",
+          "dataType": "Text",
+          "developerName": "deviceId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "email",
+          "dataType": "Text",
+          "developerName": "email",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventId",
+          "dataType": "Text",
+          "developerName": "eventId",
+          "isDataRequired": true,
+          "primaryIndexOrder": 1,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sessionId",
+          "dataType": "Text",
+          "developerName": "sessionId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "firstName",
+          "dataType": "Text",
+          "developerName": "firstName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "isAnonymous",
+          "dataType": "Text",
+          "developerName": "isAnonymous",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "lastName",
+          "dataType": "Text",
+          "developerName": "lastName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "phoneNumber",
+          "dataType": "Text",
+          "developerName": "phoneNumber",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventType",
+          "dataType": "Text",
+          "developerName": "eventType",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        }
+      ],
+      "fieldCount": 11,
+      "availabilityStatusLabel": {
+        "label": "In Use",
+        "rawValue": "INUSE"
+      },
+      "streamingAppLabel": "EP_AI1"
+    },
+    {
+      "developerName": "userLoggedIn",
+      "masterLabel": "User Logged In",
+      "category": "Engagement",
+      "availabilityStatus": "INUSE",
+      "externalDataTranFields": [
+        {
+          "masterLabel": "category",
+          "dataType": "Text",
+          "developerName": "category",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "dateTime",
+          "dataType": "DateTime",
+          "developerName": "dateTime",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "deviceId",
+          "dataType": "Text",
+          "developerName": "deviceId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "email",
+          "dataType": "Text",
+          "developerName": "email",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventId",
+          "dataType": "Text",
+          "developerName": "eventId",
+          "isDataRequired": true,
+          "primaryIndexOrder": 1,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "sessionId",
+          "dataType": "Text",
+          "developerName": "sessionId",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "firstName",
+          "dataType": "Text",
+          "developerName": "firstName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "isAnonymous",
+          "dataType": "Text",
+          "developerName": "isAnonymous",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "lastName",
+          "dataType": "Text",
+          "developerName": "lastName",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "phoneNumber",
+          "dataType": "Text",
+          "developerName": "phoneNumber",
+          "isDataRequired": false,
+          "isCurrencyIsoCode": false
+        },
+        {
+          "masterLabel": "eventType",
+          "dataType": "Text",
+          "developerName": "eventType",
+          "isDataRequired": true,
+          "isCurrencyIsoCode": false
+        }
+      ],
+      "fieldCount": 11,
+      "availabilityStatusLabel": {
+        "label": "In Use",
+        "rawValue": "INUSE"
+      },
+      "streamingAppLabel": "EP_AI1"
+    }
+  ]
+}
