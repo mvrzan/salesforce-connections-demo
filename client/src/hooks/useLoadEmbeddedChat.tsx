@@ -25,7 +25,7 @@ const useLoadEmbeddedChat = () => {
 
         setTimeout(() => {
           const deviceId = window?.SalesforceInteractions.getAnonymousId();
-          console.log("deviceId", deviceId);
+
           window.embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
             deviceId: deviceId,
           });
