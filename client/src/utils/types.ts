@@ -3,6 +3,8 @@ export interface ProductType {
   ImageURL__c: string;
   ssot__Name__c: string;
   ssot__PrimaryProductCategory__c: string;
+  ssot__Description__c: string;
+  Product_Price__c: string;
 }
 
 declare global {
