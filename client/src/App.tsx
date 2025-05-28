@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import PlansOfFuture from "./components/PlansOfFuture";
 import HomeTv from "./components/HomeTv";
 import Discount from "./components/Discount";
+import Recommendations from "./components/Recommendations";
 
 function App() {
   const configureScriptUrl = useDataCloudScript();
@@ -30,6 +31,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <Recommendations />
       <PlansOfFuture />
       <div className="w-full bg-no-repeat bg-center bg-[size:100%_auto] bg-[url('./assets/background/LineArt_lines_internet_bgTrim2.png')]">
         <HomeTv />
