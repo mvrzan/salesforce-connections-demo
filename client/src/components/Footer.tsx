@@ -11,7 +11,7 @@ const Footer = (): ReactElement => {
         <div className="flex flex-col items-center mb-8">
           <img src={quadstarLogo} alt="Quadstar Logo" className="h-12 mb-4" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-8 max-w-[1200px] mx-auto">
           <div>
             <div className="font-bold mb-2 text-[#278D90]">SUBSCRIBE</div>
             <div className="mb-2 text-xs">
@@ -140,17 +140,17 @@ const Footer = (): ReactElement => {
         </div>
       </div>
       <div className="bg-[#231f20] py-2">
-        <div className="flex items-center justify-between max-w-[1200px] mx-auto px-4">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between max-w-[1200px] mx-auto px-4">
           <div className="flex items-center">
             <span className="mr-2">Built on</span>
             <img src={salesforceLogo} alt="Salesforce Logo" className="h-6 w-auto" />
           </div>
-          <div className="max-w-[70%]">
+          <div className="w-full text-center sm:max-w-[70%] sm:text-left">
             <div className="text-xs mb-1">
               © Copyright 2025 Salesforce.com, inc. | Quadstar is not a real company. It is used for Salesforce demos.
               No orders will be processed.
             </div>
-            <div className="flex flex-wrap gap-4 text-[0.75rem]">
+            <div className="flex flex-wrap gap-4 text-[0.75rem] justify-center sm:justify-start">
               <a href="https://www.salesforce.com/company/legal/" className="text-[#278D90] no-underline">
                 Legal
               </a>

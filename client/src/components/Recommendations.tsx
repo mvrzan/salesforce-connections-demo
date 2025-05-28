@@ -2,6 +2,7 @@ import React from "react";
 import internetPlansIcon from "../assets/images/Icon_Circle_internetPlans_x2.png";
 import mobilePlansIcon from "../assets/images/Icon_Circle_mobilePlans_x2.png";
 import homeEntertainmentIcon from "../assets/images/Icon_Circle_homeEntertainment_x2.png";
+import useSalesforceInteractions from "../hooks/useSalesforceInteractions";
 
 interface RecommendationItem {
   id: string;
@@ -126,6 +127,7 @@ const mockRecommendationsData: Record<RecommendationType, RecommendationItem[]> 
 };
 
 const Recommendations: React.FC<RecommendationsProps> = ({ recommendationType }) => {
+  const { viewProduct } = useSalesforceInteractions();
   const recommendedServices = mockRecommendationsData[recommendationType] || mockRecommendationsData.bundle; // Fallback
 
   return (
@@ -136,6 +138,7 @@ const Recommendations: React.FC<RecommendationsProps> = ({ recommendationType })
           <div
             key={item.id}
             className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col transform hover:scale-105 transition-transform duration-300 ease-in-out"
+            onClick={() => viewProduct(+item.id, item.title, item.description)}
           >
             <img src={item.image} alt={item.title} className="w-full h-48 sm:h-56 object-contain p-4 bg-gray-50" />
             <div className="p-6 flex flex-col flex-grow">
