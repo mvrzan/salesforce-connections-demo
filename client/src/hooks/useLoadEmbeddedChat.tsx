@@ -1,4 +1,11 @@
+import useSalesforceInteractions from "./useSalesforceInteractions";
+import useBearStore from "./useBearStore";
+
 const useLoadEmbeddedChat = () => {
+  const { personalizationProductRecommendations } = useSalesforceInteractions();
+  const updateRecommendedProducts = useBearStore((state) => state.updateRecommendedProducts);
+  const personalizationEndpoint = import.meta.env.VITE_PERSONALIZATION_ENDPOINT;
+
   const configureAgentforceScriptUrl = (
     orgId: string,
     scriptUrl: string,
@@ -41,6 +48,16 @@ const useLoadEmbeddedChat = () => {
               "Hi, I'm an AI service assistant. How can I help you?";
 
             if (sender !== "chatbot" || initialMessage) return;
+
+            setTimeout(() => {
+              const getProducts = async () => {
+                const products = await personalizationProductRecommendations([personalizationEndpoint]);
+
+                updateRecommendedProducts(products);
+              };
+
+              getProducts();
+            }, 100);
           });
 
           console.log("🤖 Event listener successfully added!");
