@@ -60,7 +60,7 @@ const HeroSection = () => {
           alt="Hero Banner Bottom Overlay"
           className="w-full h-auto object-cover block -mt-4 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20 z-[1]"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col items-center z-[2] pointer-events-auto px-4">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex flex-col items-center z-[2] pointer-events-auto px-4 pt-8 sm:pt-6 md:pt-4 lg:pt-2">
           <div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 md:mb-6 text-center drop-shadow-lg">
               Let's find what you need
