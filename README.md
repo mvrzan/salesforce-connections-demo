@@ -96,7 +96,7 @@ The application flow is the following:
 
 ## Demo: Agentforce chat personalization
 
-![](./screenshots/agentforce-chat.gif)
+![](./screenshots/demo.gif)
 
 ## Technologies used
 
