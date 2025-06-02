@@ -3,9 +3,11 @@
 <a  href="https://www.salesforce.com/connections/"><img  src="./screenshots/cnx_logo.svg"  alt="Salesforce"  width="150" height="150" hspace="50" /></a>
 <a  href="https://www.salesforce.com/"><img  src="./screenshots/salesforce_logo.svg"  alt="Salesforce"  width="150" height="150" hspace="50" /></a>
 <p/>
+<p align="center">
 <a  href="https://www.salesforce.com/data/"><img  src="./screenshots/data_cloud_logo.png"  alt="Data Cloud"  width="150" height="150" hspace="50"/></a>
 <a  href="https://www.salesforce.com/ca/agentforce/"><img  src="https://wp.salesforce.com/en-us/wp-content/uploads/sites/4/2024/09/img-agent-1.webp"  alt="Agentforce"  width="150" height="150" hspace="50"/></a>
 <a  href="https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/overview.html"><img  src="./screenshots/salesforce_personalization.png"  alt="Salesforce Personalization"  width="150" height="150"  hspace="50"/></a>
+<p/>
 <p/>
 
 # Connections 2025 Demo: Boost Telecom Revenue with Personalized Upselling
