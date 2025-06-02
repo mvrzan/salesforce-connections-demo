@@ -2,6 +2,7 @@ import useBearStore from "../hooks/useBearStore";
 import useSalesforceInteractions from "../hooks/useSalesforceInteractions";
 import type { ProductType } from "../utils/types";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -36,9 +37,17 @@ const itemVariants = {
 const Recommendations = () => {
   const { viewProduct } = useSalesforceInteractions();
   const epRecommendedProducts = useBearStore((state) => state.epRecommendedProducts);
+  const recommendationsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (epRecommendedProducts.length > 0 && recommendationsRef.current) {
+      recommendationsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [epRecommendedProducts]);
 
   return (
     <motion.div
+      ref={recommendationsRef}
       variants={containerVariants}
       initial="hidden"
       animate={epRecommendedProducts.length > 0 ? "visible" : "hidden"}
