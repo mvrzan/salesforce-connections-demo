@@ -32,7 +32,6 @@ This solution was presented at Salesforce Connections 2025, June 12th. It showca
     - [Development](#development)
     - [Salesforce environment](#salesforce-environment)
       - [Data Cloud](#data-cloud)
-      - [Salesforce Connected App](#salesforce-connected-app)
       - [Salesforce Flows](#salesforce-flows)
       - [Personalization](#personalization)
       - [Prompt](#prompt)
@@ -195,8 +194,8 @@ In order for this application to work end to end, there are several Salesforce c
 
 #### Data Cloud
 
-1. Within Data Cloud, the first step is to configure a Website connector using the provided [web event schema](./salesforce_config/data_cloud_web_connector/quadstar_web_schema.json.
-2. Configure Data Streams for the newly configured Website connector and map the fields appropriately
+1. Within Data Cloud, the first step is to configure a Website connector using the provided [web event schema](./salesforce_config/data_cloud_web_connector/quadstar_web_schema.json).
+2. Configure Data Streams for the newly configured Website connector and map the fields appropriately for both behavior and individual data streams (if you don't want to use custom events, `Product Browse Engagement` is the only DMO you should map for the behavioral events)
 3. The `Chat Activities`, `User Logged In`, and `User Logged Out` are custom Data Model Objects that have a N:1 relationship to the Individual DMO
 4. Ensure you have a real-time Identity Resolution running
 5. Create a real-time Data Graph
@@ -205,7 +204,9 @@ In order for this application to work end to end, there are several Salesforce c
 
 ![](./screenshots/real-time-data-graph.png)
 
-1. Create an Item Data Graph
+> Please note that if you don't want to use custom events, just use the `Product Browse Engagement` in your real-time Data Graph
+
+6. Create an Item Data Graph
 
 ![](./screenshots/item-data-graph.png)
 
@@ -215,21 +216,9 @@ In order for this application to work end to end, there are several Salesforce c
 SELECT ssot__GoodsProduct__dlm.ssot__Id__c AS goodsProductsId__c, ssot__GoodsProduct__dlm.ssot__Name__c AS productName__c, COUNT(ssot__GoodsProduct__dlm.ssot__Id__c) AS ProductGeneral__c FROM ssot__GoodsProduct__dlm GROUP BY goodsProductsId__c,productName__c
 ```
 
-#### Salesforce Connected App
-
-1. Ensure you have created a [Salesforce Connected App](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create.htm&type=5)
-2. You are going to need this information for the `server` `.env` file and connection
-3. NOTE: This step is only needed if you are using a 3rd party chat example
-
 #### Salesforce Flows
 
-Create three flows, one for the 3rd party chat, one for the Agentforce chat, and one for fetching product categories:
-
-3rd party chat Flow
-
-![](./screenshots/3rd-party-flow.png)
-
-> NOTE: This Flow API names is going to be passed over to the `server` `.env` file
+Create two flows, one for the Agentforce chat and one for fetching product categories:
 
 Agentforce chat Flow
 
@@ -255,34 +244,7 @@ Catalog Categories Flow
 
 #### Prompt
 
-Create two prompts. One for the 3rd party chat and one for Agentforce.
-
-3rd party chat
-
-```
-You need to look through chat messages to understand the latest product category being discussed, then refer to a list of catalog categories, and return the category from this list that most closely matches the category currently being discussed.
-
-
-Here is the device id:
-{!$Input:deviceId}
-
-Here is the list of catalog categories:
-{!$Flow:Enhancer_Get_Catalog_Categories.Prompt}
-
-Here are the chat messages as a deserialized json string, which appears in the order from the oldest to most recent. Pick out the latest product category being discussed.
-{!$Input:chatBody}
-
-Return only the value of the device id and category in the following format.
-
-deviceId,category
-
-For deviceId, return only the string without additional modification.
-
-For category, remove the string Category: and return without additional modification.
-If you cannot determine the answer, return the string Unknown. 
-```
-
-Agentforce chat
+Create the prompt:
 
 ```
 You need to look through chat messages to understand the latest product category being discussed, then refer to a list of catalog categories, and return the category from this list that most closely matches the category currently being discussed.
@@ -305,7 +267,7 @@ deviceId,category
 
 #### Apex Class
 
-Ensure you deploy the [Apex code](./salesforce_config/apex/) to your org.
+Ensure you deploy the [Apex code](./salesforce_config/apex/) to your org. This will be referenced by the Agentforce chat Flow.
 
 #### Custom Metadata Types
 
@@ -328,6 +290,12 @@ Ensure you deploy the [Apex code](./salesforce_config/apex/) to your org.
 4. Ensure the Topic uses the dedicated Flow as its Action
 
 ![](./screenshots/agent-action.png)
+
+5. Add proper domains to Trusted URLs
+6. Ensure you enable prechat on your embedded deployment and add `deviceId` field to it
+7. Make sure you add the `deviceId` as a custom text filed on the Messaging Session object via Object Manager
+8. Make sure you add the `deviceId` on the Messaging Session Settings as a custom parameter
+9. Make sure you enable the `deviceId` as the context on the Service Agent
 
 ## Deployment
 
