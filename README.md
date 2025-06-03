@@ -12,7 +12,9 @@
 
 # Connections 2025 Demo: Boost Telecom Revenue with Personalized Upselling
 
-This solution was presented at Salesforce Connections 2025, June 12th. It showcases how you can personalized your website based on a chat conversation you have with a Agentforce chatbot.
+This solution was presented at Salesforce Connections 2025, June 12th. It showcases how you can personalized your website based on a chat conversation you have with a Agentforce chatbot. The demo can be tested by going to the following [link](https://salesforce-connections-demo-665a3c7c9aa0.herokuapp.com/).
+
+> DISCLAIMER: This software is to be considered "sample code", a Type B Deliverable, and is delivered "as-is" to the user. Salesforce bears no responsibility to support the use or implementation of this software.
 
 # Table of Contents
 
