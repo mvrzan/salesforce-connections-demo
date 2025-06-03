@@ -216,6 +216,19 @@ In order for this application to work end to end, there are several Salesforce c
 SELECT ssot__GoodsProduct__dlm.ssot__Id__c AS goodsProductsId__c, ssot__GoodsProduct__dlm.ssot__Name__c AS productName__c, COUNT(ssot__GoodsProduct__dlm.ssot__Id__c) AS ProductGeneral__c FROM ssot__GoodsProduct__dlm GROUP BY goodsProductsId__c,productName__c
 ```
 
+8. Map the product catalog [files](./salesforce_config/product_catalog/)
+9. Map the Goods Products DMO
+
+![](./screenshots/goods-product-mapping.png)
+
+10. Create a custom DMO Goods Related Items and create N:1 relationship to Goods Products DMO
+
+![](./screenshots/goods-related-items.png)
+
+11. Create a custom DMO Goods Category and map it
+
+![](./screenshots/goods-category.png)
+
 #### Salesforce Flows
 
 Create two flows, one for the Agentforce chat and one for fetching product categories:
