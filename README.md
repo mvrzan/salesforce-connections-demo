@@ -144,8 +144,7 @@ The first step is to clone the repository and install the project dependencies f
 Client:
 
 ```
-cd salesforce-connections-demo
-cd client
+cd salesforce-connections-demo/client
 npm install
 ```
 
