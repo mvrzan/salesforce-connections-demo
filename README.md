@@ -5,7 +5,7 @@
 <p/>
 <p align="center">
 <a  href="https://www.salesforce.com/data/"><img  src="./screenshots/data_cloud_logo.png"  alt="Data Cloud"  width="150" height="150" hspace="50"/></a>
-<a  href="https://www.salesforce.com/ca/agentforce/"><img  src="https://wp.salesforce.com/en-us/wp-content/uploads/sites/4/2024/09/img-agent-1.webp"  alt="Agentforce"  width="150" height="150" hspace="50"/></a>
+<a  href="https://www.salesforce.com/ca/agentforce/"><img  src="./screenshots/agentforce.webp"  alt="Agentforce"  width="150" height="150" hspace="50"/></a>
 <a  href="https://developer.salesforce.com/docs/marketing/einstein-personalization/guide/overview.html"><img  src="./screenshots/salesforce_personalization.png"  alt="Salesforce Personalization"  width="150" height="150"  hspace="50"/></a>
 <p/>
 <p/>
@@ -41,7 +41,7 @@ NOTE: You can ask about mobile devices, mobile plans, internet plans, bundles, e
       - [Custom Metadata Types](#custom-metadata-types)
       - [Agentforce](#agentforce)
   - [Deployment](#deployment)
-      - [Can I deploy this anywhere else other than Heroku?](#can-i-deploy-this-anywhere-else-other-than-heroku)
+    - [Can I deploy this anywhere else other than Heroku?](#can-i-deploy-this-anywhere-else-other-than-heroku)
 - [Kudos](#kudos)
 - [License](#license)
 - [Disclaimer](#disclaimer)
